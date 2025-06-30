@@ -1,90 +1,172 @@
 <!DOCTYPE html>
-<html lang="="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Feby Rose – Software Tester & Developer</title>
+  <title>Feby Rose – QA Engineer & Developer</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; line-height: 1.6; padding: 20px; color: #333; }
-    h1, h2 { color: #2c3e50; }
-    h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 40px; }
-    ul { list-style-type: disc; margin-left: 20px; }
-    a { color: #2980b9; text-decoration: none; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-    .badge { background: #ecf0f1; padding: 2px 6px; border-radius: 4px; margin: 2px; display: inline-block; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1100px;
+      margin: auto;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 20px;
+    }
+    header div {
+      flex: 1 1 300px;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: 20px;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    nav {
+      margin: 20px 0;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2980b9;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      border-bottom: 2px solid #2980b9;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .badge { font-size: 0.9em; background: #ecf0f1; padding:4px 8px; border-radius:4px; margin:2px; display:inline-block; }
   </style>
 </head>
 <body>
-  <h1>Feby Rose – QA Engineer & Software Developer</h1>
-  <img src="Feby_Photo.jpg" alt="Feby Rose" style="width:150px; border-radius:50%; margin-top:20px;" />
 
+<header>
+  <div>
+    <h1>Feby Rose</h1>
+    <p>QA Engineer & Full-Stack Developer | M.Sc. Computer Science @ Uppsala University</p>
+    <p><a href="https://linkedin.com/in/yourprofile">LinkedIn</a> • <a href="mailto:youremail@example.com">Email me</a></p>
+  </div>
+  <div>
+    <img src="Feby_Photo.jpg" alt="Feby Rose">
+  </div>
+</header>
 
-  <section>
-    <h2>About Me 👋</h2>
-    <p>I’m a software tester and developer with over 8 years of experience working with global IT consultancies such as IBM, Capgemini, and Accenture. Currently pursuing a Master’s in Computer Science at Uppsala University, Sweden, I’m passionate about delivering high-quality software through a blend of robust testing, automation, and full-stack development skills.</p>
-    <p><a href="https://linkedin.com/in/yourprofile">My LinkedIn profile</a></p>
-  </section>
+<nav>
+  <a href="#experience">Experience</a>
+  <a href="#thesis">Thesis</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+</nav>
 
-  <section>
-    <h2>Experience 🏢</h2>
-    <ul>
-      <li><strong>IBM India Ltd</strong> (2022–2023) – Team management, Selenium & Playwright with TypeScript, agile delivery for Scottish Government Pensions</li>
-      <li><strong>Capgemini</strong> (2020–2022) – Test automation for ANZ Bank using Selenium, REST API, Postman, JIRA</li>
-      <li><strong>Accenture</strong> (2015–2019) – Manual and automated testing using Selenium, UFT, SeeTest; tested large healthcare systems</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Master’s Thesis 🎓</h2>
-    <p><strong>Uppsala University (2025)</strong> – Transfer Learning for Historical Text Recognition<br/>
-    Applied transfer learning to improve handwritten text recognition on 16th–17th century Swedish manuscripts. Fine-tuned Loghi HTR and Swedish Lion models across 295k+ samples using progressive layer unfreezing and dataset scaling, focusing on CER/WER improvements.<br/>
-    <strong>Tech stack:</strong> Python, TensorFlow, Loghi HTR, Hugging Face, OCR, Kaggle</p>
-  </section>
-
-  <section>
-    <h2>Projects 🔬</h2>
-    <ul>
-      <li><strong>Full-stack Quiz App</strong> – Built with React, TypeScript, Node.js, GraphQL, MongoDB, Tailwind CSS</li>
-      <li><strong>Medical OCR System</strong> – Converted handwritten records into structured data using ML and Python</li>
-      <li><strong>Tic-Tac-Toe AI Game</strong> – Implemented using the Min-Max algorithm</li>
-      <li><strong>Gesture-Controlled Android Game</strong> – Real-time controls using voice and gesture inputs</li>
-      <li><strong>Django Maintenance Project</strong> – Debugged and extended a legacy Django codebase</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Skills 💻</h2>
-    <div class="grid">
-      <div>
-        <h4>Testing & QA</h4>
-        <span class="badge">Selenium WebDriver</span><span class="badge">Playwright</span><span class="badge">Postman</span><span class="badge">TestNG</span><span class="badge">HP-UFT</span><span class="badge">SeeTest</span>
-      </div>
-      <div>
-        <h4>Frontend</h4>
-        <span class="badge">React</span><span class="badge">Tailwind CSS</span><span class="badge">TypeScript</span><span class="badge">JavaScript</span><span class="badge">HTML/CSS</span>
-      </div>
-      <div>
-        <h4>Backend & Data</h4>
-        <span class="badge">Node.js</span><span class="badge">Express.js</span><span class="badge">MongoDB</span><span class="badge">SQL</span><span class="badge">Python</span><span class="badge">Java</span>
-      </div>
-      <div>
-        <h4>Tools & Practices</h4>
-        <span class="badge">Git</span><span class="badge">JIRA</span><span class="badge">Confluence</span><span class="badge">Agile</span><span class="badge">Jenkins</span>
-      </div>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>IBM India Ltd (2022–2023)</h3>
+      <p>Led QA team for Scottish Govt Pension Scheme automation using Selenium & Playwright (TypeScript). Agile delivery.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>Capgemini (2020–2022)</h3>
+      <p>Automated ANZ Bank’s retail lending system using Selenium WebDriver, REST APIs, Postman, JIRA.</p>
+    </div>
+    <div class="card">
+      <h3>Accenture (2015–2019)</h3>
+      <p>Built automation frameworks with Selenium, UFT, SeeTest for healthcare and pharmacy systems.</p>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>Education 🎓</h2>
-    <ul>
-      <li><strong>Uppsala University</strong> – Master’s in Computer Science (2023–ongoing)</li>
-      <li><strong>PISAT</strong> – Bachelor's in Computer Science (2014, CGPA: 7.5)</li>
-    </ul>
-  </section>
+<section id="thesis">
+  <h2>Master’s Thesis</h2>
+  <p><strong>Transfer Learning for Historical Text Recognition</strong> (Uppsala University, 2025)<br>
+  Applied transfer learning to improve handwritten text recognition on 16th–17th-century Swedish manuscripts (295k+ samples), optimizing OCR models (Loghi HTR, Swedish Lion) through progressive layer unfreezing and CER/WER tuning.</p>
+  <p><strong>Tech stack:</strong> Python · TensorFlow · Loghi HTR · Hugging Face · OCR · Kaggle</p>
+</section>
 
-  <section>
-    <h2>Contact 📬</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a> | GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-  </section>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Quiz App (Full‑Stack)</h3>
+      <p>React • TypeScript • Node.js • GraphQL • MongoDB • Tailwind</p>
+    </div>
+    <div class="card">
+      <h3>Medical OCR System</h3>
+      <p>ML-based OCR pipeline to digitize handwritten medical records.</p>
+    </div>
+    <div class="card">
+      <h3>Tic‑Tac‑Toe AI</h3>
+      <p>Implemented Min‑Max algorithm in Python.</p>
+    </div>
+    <div class="card">
+      <h3>Gesture‑Controlled Android Game</h3>
+      <p>Real-time gameplay using gesture and voice inputs.</p>
+    </div>
+    <div class="card">
+      <h3>Django Legacy Refactor</h3>
+      <p>Maintained and extended large-scale Django codebase.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <div class="grid">
+    <div class="card">
+      <h4>QA & Automation</h4>
+      <p><span class="badge">Selenium</span><span class="badge">Playwright</span><span class="badge">TestNG</span><span class="badge">Postman</span><span class="badge">UFT</span></p>
+    </div>
+    <div class="card">
+      <h4>Frontend</h4>
+      <p><span class="badge">React</span><span class="badge">Tailwind CSS</span><span class="badge">TypeScript</span><span class="badge">JavaScript</span></p>
+    </div>
+    <div class="card">
+      <h4>Backend & Data</h4>
+      <p><span class="badge">Node.js</span><span class="badge">MongoDB</span><span class="badge">SQL</span><span class="badge">Python</span><span class="badge">Java</span></p>
+    </div>
+    <div class="card">
+      <h4>Tools & Practices</h4>
+      <p><span class="badge">Git</span><span class="badge">JIRA</span><span class="badge">Confluence</span><span class="badge">Jenkins</span><span class="badge">Agile</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>M.Sc. Computer Science</strong>, Uppsala University (2023–ongoing)</li>
+    <li><strong>B.Sc. Computer Science</strong>, PISAT (2014), CGPA 7.5</li>
+  </ul>
+</section>
+
 </body>
 </html>
